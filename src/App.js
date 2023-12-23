@@ -5,13 +5,13 @@ import Resume from "./components/Resume";
 import Demo from "./components/Demo";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+import {Link,Element} from 'react-scroll';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import LayersIcon from '@mui/icons-material/Layers';
 import InfoIcon from '@mui/icons-material/Info';
 import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
 import './App.css';
-import {Link} from 'react-router-dom';
 
 function App() {
   const icons = [
@@ -19,80 +19,89 @@ function App() {
       id: 1,
       text: 'Home',
       element: <HomeOutlinedIcon />,
-      path: '/',
+      targetId:'home-section',
     },
     {
       id: 2,
       text: 'About',
       element: <InfoIcon />,
-      path: '/about',
+      targetId:'about-section',
     },
     {
       id: 3,
-      text: 'Projects',
+      text: 'Bio Details',
       element: <LayersIcon />,
-      path: '/projects',
+      targetId:'resume-section',
     },
     {
       id: 4,
+      text: 'Projects',
+      element: <LayersIcon />,
+      targetId:'project-section',
+    },
+    {
+      id: 5,
       text: 'Contact',
       element: <ConnectWithoutContactIcon />,
-      path: '/contact',
+      targetId:'contact-section',
     },
   ];
+
   return (
-   <Router>
       <div className="">
-   
+   {/* sidebar begins */}
         <div>
           <div className='sidebar flex justify-start fixed top-[20rem] left-2'>
       <div className='w-fit p-2 rounded-full'>
         {icons.map((icon) => (
-          <Link key={icon.id} to={icon.path} className='no-underline'>
+          <Link
+          key={icon.id}
+          to={icon.targetId}
+          smooth={true}
+          duration={500}
+          className="no-underline"
+          spy={true}>
             <button className='px-3 py-3 my-3 flex bg-gray-100 hover:bg-teal-300/50 shadow-2xl border-black rounded-full relative group'>
               {icon.element}
               <span className='px-2 font-semibold hidden group-hover:inline-block'>
                 {icon.text}
               </span>
             </button>
-          </Link>
+            </Link>
         ))}
       </div>
     </div>
-
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Resume />} />
-            <Route path="/contact" element={<ContactForm />} />
-          </Routes>
+   {/* sidebar ends */}
+          <Element name="home-section">
+           <Home/>
+          </Element>
         </div>
         <br />
         <br />
         <br />
-        <div>
+        <Element name="about-section">
           <About />
-        </div>
+        </Element>
         <br />
         <br />
         <br />
-        <div>
+        <Element name="resume-section">
           <Resume />
-        </div>
+        </Element>
 
         <br />
         <br />
         <br />
-        <div>
+        <Element name="projects-section">
           <Demo />
-        </div>
+        </Element>
 
         <br />
         <br />
         <br />
-        <div>
+        <Element name="contact-section">
           <ContactForm />
-        </div>
+        </Element>
         <br />
         <br />
         <br />
@@ -101,7 +110,6 @@ function App() {
         <br />
         <Footer />
       </div>
-    </Router>
   );
 }
 
