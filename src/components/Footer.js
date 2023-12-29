@@ -1,7 +1,7 @@
-import { Copyright, Facebook, GitHub, Instagram, LinkedIn, Mail, PhoneSharp } from "@mui/icons-material";
+import { Copyright, GitHub, LinkedIn, Mail, PhoneSharp } from "@mui/icons-material";
 import { Divider } from "@mui/material";
-
-
+import { Instagram } from "@mui/icons-material";
+ 
 export default function Footer()
 {
     return (
@@ -15,10 +15,9 @@ export default function Footer()
             <h1 className="text-2xl -tracking-wide">KIRUTHIYAASHREE S P</h1>
             <br/>
             <div>
-                <Facebook sx={{p:3}}/>
-                <Instagram sx={{p:3}}/>
-                <LinkedIn sx={{p:3}}/>
-                <GitHub sx={{p:3}}/>
+                <a target="blank" href="https://www.instagram.com/kiruthiyaashreesp/"><Instagram/></a>
+                <a target="blank" href="www.linkedin.com/in/kiruthiyaashree-s-p"><LinkedIn /></a>
+                <a target="blank" href="https://github.com/kiruthiyaashree"><GitHub  /></a>
             </div>
             <br/>
             <br/>

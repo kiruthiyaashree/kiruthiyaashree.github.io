@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 
 import {Link,Element} from 'react-scroll';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
+import DetailsIcon from '@mui/icons-material/Details';
 import LayersIcon from '@mui/icons-material/Layers';
 import InfoIcon from '@mui/icons-material/Info';
 import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
@@ -30,7 +31,7 @@ function App() {
     {
       id: 3,
       text: 'Bio Details',
-      element: <LayersIcon />,
+      element: <DetailsIcon />,
       targetId:'resume-section',
     },
     {
