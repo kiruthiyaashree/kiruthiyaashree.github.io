@@ -39,8 +39,7 @@ export default function ContactForm()
                             <TextField id="email" autoComplete='false' label="Email" variant="standard" sx={{width:250}}/>
                         </div>
                         <div className='p-3'>
-                            <TextField id="message" label="Your Message" variant="standard" sx={{width:250}}/>
-                            
+                            <TextField id="message" label="Your Message" variant="standard" sx={{width:250}}/>     
                         </div>
                         <br/>
                         <div className='flex justify-center p-3'>
