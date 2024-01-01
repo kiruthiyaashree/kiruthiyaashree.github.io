@@ -9,15 +9,10 @@ export default function Interests()
                                     </li>
                                 <br/>
                                     <li >
-                                    <span className="font-bold">Music</span>
-                                        <p >We can experience all emotions through music, which makes it easier to comprehend others' emotional states when collaborating.</p>
+                                    <span className="font-bold">Listening to Songs</span>
+                                        <p >We can experience all emotions through songs, which makes it easier to comprehend others' emotional states when collaborating.</p>
                                     </li>
                                 <br/>
-                                <li >
-                                    <span className="font-bold">Music</span>
-                                        <p >We can experience all emotions through music, which makes it easier to comprehend others' emotional states when collaborating.</p>
-                                    </li>
-
                             </ul>
                 </div>
     );

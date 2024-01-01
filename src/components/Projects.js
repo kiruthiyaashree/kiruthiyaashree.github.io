@@ -5,17 +5,17 @@ export default function Projects()
                             <ul className="list-disc  tracking-wide">
                                     <li >
                                     <span className="font-bold">Online Quiz Management System</span>
-                                        <p>MY KEC is a website developed to maintain the Student Activity Points, Events and Circulars. HTML, CSS and Javascript used to make live UI. PHP and MySQL to handle and manage the data</p>
+                                        <p className="text-justify">Developed a Java-based application with JavaFXML for the front-end and utilized MySQL for the backend.</p>
                                     </li>
                                 <br/>
                                     <li >
-                                    <span className="font-bold">Infant Jesus Matriculation Higher Secondary School,Tiruppur</span>
-                                        <p >Higher Secondary School - 95,15%</p>
+                                    <span className="font-bold">QuickBite</span>
+                                        <p className="text-justify">Designed an food-based website to explore my HTML, CSS and Javascript knowledge.</p>
                                     </li>
                                 <br/>
                                     <li> 
-                                    <span className="font-bold">Kongu Vellalar Matriculation Higher Secondary School,Tiruppur</span>
-                                        <p>Secondary School Leaving Certificate - 93.8%</p>
+                                    <span className="font-bold">Coachmagic</span>
+                                        <p className="text-justify">Contributed as an front-end developer(React, Tailwind css) in an Web-based project.</p>
                                     </li>
 
                             </ul>

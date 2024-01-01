@@ -1,4 +1,5 @@
-import Logo from '../images/profile.png';
+import Profile from '../images/profile.png';
+import Logo from '../images/Logo.png';
 import { useEffect, useState } from 'react';
 import '../App.css'
 // import Sidebar from "./Sidebar";
@@ -28,9 +29,13 @@ export default function Home()
         return ()=>clearInterval(typingEffect);
     },[]);
     return (
-        <div className="home grid grid-cols-2 h-[40rem] w-full">
+        <div className="home h-[40rem] w-full">
+        <span  className='flex justify-end'>
+         <img src={Logo} className='h-[3rem] m-4'  alt='try reloading'/>
+         </span>
+         <div className='grid grid-cols-2'>
         <div className='h-full my-12 flex justify-center items-center w-full'>
-            <img src={Logo} className='border border-black border-b-4 rounded-full p-1 h-[25rem] '  alt='try reloading'/>
+            <img src={Profile} className='border border-black border-b-4 rounded-full p-1 h-[25rem] '  alt='try reloading'/>
             </div>
             <div className="flex flex-col items-start justify-center">    
                 <p className='flex justify-end bold text-[2rem] mb-2'>I am Kiruthiyaashree</p>
@@ -40,6 +45,7 @@ export default function Home()
                 <a target="blank" href="https://www.instagram.com/kiruthiyaashreesp/"><Instagram/></a>
                 <a target="blank" href="https://www.linkedin.com/in/kiruthiyaashree-s-p/"><LinkedIn/></a>
                 <a target="blank" href="https://github.com/kiruthiyaashree"><GitHub  /></a>
+            </div>
             </div>
             </div>
             <div>
