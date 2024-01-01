@@ -7,7 +7,6 @@ import PsychologyIcon from '@mui/icons-material/Psychology';
 import LayersIcon from '@mui/icons-material/Layers';
 import ColorLensIcon from '@mui/icons-material/ColorLens';
 import HandshakeIcon from '@mui/icons-material/Handshake';
-import Projects from './Projects';
 import Interests from './Interests';
 import Activities from './Activities';
 import Education from "./Education";
@@ -16,7 +15,6 @@ export default function Tabs()
 {
     const [e_value,setevalue]=React.useState(true);
     const [s_value,setsvalue]=React.useState(false);
-    const [p_value,setpvalue]=React.useState(false);
     const [i_value,setivalue]=React.useState(false);
     const [a_value,setavalue]=React.useState(false);
 
@@ -30,7 +28,6 @@ export default function Tabs()
             // console.log(btn_name);
             setavalue(false);
             setivalue(false);
-            setpvalue(false);
             setsvalue(false);
             setevalue(true);
         }
@@ -39,17 +36,7 @@ export default function Tabs()
             // console.log(btn_name);
             setavalue(false);
             setivalue(false);
-            setpvalue(false);
             setsvalue(true);
-            setevalue(false);
-        }
-        else if(btn_name === "Projects")
-        {
-            // console.log(btn_name);
-            setavalue(false);
-            setivalue(false);
-            setpvalue(true);
-            setsvalue(false);
             setevalue(false);
         }
         else if(btn_name === "Interests")
@@ -57,7 +44,6 @@ export default function Tabs()
             // console.log(btn_name);
             setavalue(false);
             setivalue(true);
-            setpvalue(false);
             setsvalue(false);
             setevalue(false);
         }
@@ -66,7 +52,6 @@ export default function Tabs()
             // console.log(btn_name);
             setavalue(true);
             setivalue(false);
-            setpvalue(false);
             setsvalue(false);
             setevalue(false);
         }
@@ -94,10 +79,6 @@ export default function Tabs()
                     {
                         s_value && 
                         <Skills/>
-                    }
-                    {
-                        p_value && 
-                        <Projects/>
                     }
                     {
                         i_value && 
