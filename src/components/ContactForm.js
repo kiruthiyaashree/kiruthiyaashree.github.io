@@ -10,7 +10,7 @@ export default function ContactForm()
         emailjs.init("lle5JZ3XkGHIWOrqi");
         // console.log("Initialized EmailJS:", emailjs);
         const templateParams = {
-          // Define template parameters (e.g., name, email, message)
+          //  template parameters (e.g., name, email, message)
           from_name: e.target.name.value,
           from_email: e.target.email.value,
           message: e.target.message.value,
@@ -19,10 +19,10 @@ export default function ContactForm()
         emailjs.send("service_1cvmscc", "template_sfo4egy", templateParams)
           .then((response) => {
             console.log("Email sent successfully", response);
-            // Add any success message or redirect the user to a thank-you page
+            // success message or redirect the user to a thank-you page
           }, (error) => {
             console.log("Failed to send email", error);
-            // Handle errors or display an error message to the user
+            // errors or display an error message to the user
           });
       };
     return (
