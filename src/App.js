@@ -38,7 +38,7 @@ function App() {
       id: 4,
       text: 'Projects',
       element: <LayersIcon />,
-      targetId:'project-section',
+      targetId:'projects-section',
     },
     {
       id: 5,

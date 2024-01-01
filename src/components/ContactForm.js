@@ -1,8 +1,30 @@
 import Divider from '@mui/material/Divider';
 import TextField from '@mui/material/TextField';
 
+import emailjs from 'emailjs-com';
 export default function ContactForm()
 {
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.init("lle5JZ3XkGHIWOrqi");
+        // console.log("Initialized EmailJS:", emailjs);
+        const templateParams = {
+          // Define template parameters (e.g., name, email, message)
+          from_name: e.target.name.value,
+          from_email: e.target.email.value,
+          message: e.target.message.value,
+        };
+        console.log("Template Parameters:", templateParams);
+        emailjs.send("service_1cvmscc", "template_sfo4egy", templateParams)
+          .then((response) => {
+            console.log("Email sent successfully", response);
+            // Add any success message or redirect the user to a thank-you page
+          }, (error) => {
+            console.log("Failed to send email", error);
+            // Handle errors or display an error message to the user
+          });
+      };
     return (
         <div>
             <div className='flex flex-col items-center'>
@@ -31,19 +53,19 @@ export default function ContactForm()
                         </div>
                     </div>
 
-                    <form className='flex flex-col justify-center items-center'>
+                    <form className='flex flex-col justify-center items-center' onSubmit={sendEmail}>
                         <div className='p-3'>
-                            <TextField id="name" autoComplete='false' label="Name" variant="standard" sx={{width:250}}/>
+                            <TextField required id="name" name='name' autoComplete='false' label="Name" variant="standard" sx={{width:250}}/>
                         </div>
                         <div className='p-3'>
-                            <TextField id="email" autoComplete='false' label="Email" variant="standard" sx={{width:250}}/>
+                            <TextField required id="email" name='email' autoComplete='false' label="Email" variant="standard" sx={{width:250}}/>
                         </div>
                         <div className='p-3'>
-                            <TextField id="message" label="Your Message" variant="standard" sx={{width:250}}/>     
+                            <TextField required id="message" name='message' label="Your Message" variant="standard" sx={{width:250}}/>     
                         </div>
                         <br/>
                         <div className='flex justify-center p-3'>
-                                <button className='border rounded-xl border-black w-fit px-2 py-1 hover:bg-white font-semibold'>Send</button>
+                                <button type='submit' value='Submit' className='border rounded-xl border-black w-fit px-2 py-1 hover:bg-white font-semibold'>Send</button>
                             </div>
                     </form>
 

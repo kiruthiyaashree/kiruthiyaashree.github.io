@@ -17,34 +17,38 @@ export default function Demo()
                     borderWidth: '2px', 
                 }}/>
             </div>
+            <br/>
+            <br/>
 
-            <div className='mx-32 grid grid-cols-3'>
-                <div className=' w-[15rem]'>
-                        <div className="">
-                            <img src={Demo1} className='h-[10rem] w-[15rem]' alt='try reloading' />
-                        </div>
-                        <div className="">
-                            <p className="font-bold">QuickBite</p>
-                            <p className="text-justify">Designed an food-based website to explore my HTML, CSS and Javascript knowledge.</p>
-                        </div>  
-                </div>
-                <div className=' w-[15rem]'>
-                        <div className="">
-                            <img src={Demo2} className='h-[10rem] w-[15rem]' alt='try reloading' />
-                        </div>
-                        <div className="">
-                        <p className="font-bold">Online Quiz Management System</p>
-                        <p className="text-justify">Developed a Java-based application with JavaFXML for the front-end and utilized MySQL for the backend.</p>
-                        </div>  
-                </div>
-                <div className=' w-[15rem]'>
-                        <div className="">
-                            <img src={Demo3} className='h-[10rem] w-[15rem]' alt='try reloading' />
-                        </div>
-                        <div className="">
-                        <span className="font-bold">Coachmagic</span>
-                        <p className="text-justify">Contributed as an front-end developer(React, Tailwind css) in an Web-based project.</p>
-                        </div>  
+            <div className=' flex justify-center'>
+                <div className='grid grid-cols-3 gap-[10rem]'>
+                    <div className=' w-[15rem] shadow-xl'>
+                            <a className="" href='https://quick-bite-lyzj.onrender.com/' target='blank'>
+                                <img src={Demo1} className='h-[10rem] w-[15rem]' alt='try reloading' />
+                            </a>
+                            <div className="p-3">
+                                <p className="font-bold">QuickBite</p>
+                                <p className="text-justify">Designed an food-based website to explore my HTML, CSS and Javascript knowledge.</p>
+                            </div>  
+                    </div>
+                    <div className=' w-[15rem] shadow-xl'>
+                            <a href='https://github.com/kiruthiyaashree/javafx-application/tree/main' target='blank' className="">
+                                <img src={Demo2} className='h-[10rem] w-[15rem]' alt='try reloading' />
+                            </a>
+                            <div className="p-3">
+                            <p className="font-bold">Online Quiz Management System</p>
+                            <p className="text-justify">Developed a Java-based application with JavaFXML for the front-end and utilized MySQL for the backend.</p>
+                            </div>  
+                    </div>
+                    <div className=' w-[15rem] shadow-xl'>
+                            <a href='https://coach-magic-lnzs.onrender.com/home' target='blank' className="">
+                                <img src={Demo3} className='h-[10rem] w-[15rem]' alt='try reloading' />
+                            </a>
+                            <div className="p-3">
+                            <span className="font-bold">Coachmagic</span>
+                            <p className="text-justify">Contributed as an front-end developer(React, Tailwind css) in an Web-based project.</p>
+                            </div>  
+                    </div>
                 </div>
             </div>
         </div>
