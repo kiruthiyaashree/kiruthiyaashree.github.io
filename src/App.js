@@ -47,7 +47,6 @@ function App() {
       targetId:'contact-section',
     },
   ];
-
   return (
       <div className="">
    {/* sidebar begins */}
