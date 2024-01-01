@@ -4,7 +4,6 @@ import React from "react";
 import '../App.css';
 import SchoolIcon from '@mui/icons-material/School';
 import PsychologyIcon from '@mui/icons-material/Psychology';
-import LayersIcon from '@mui/icons-material/Layers';
 import ColorLensIcon from '@mui/icons-material/ColorLens';
 import HandshakeIcon from '@mui/icons-material/Handshake';
 import Interests from './Interests';
@@ -62,7 +61,6 @@ export default function Tabs()
                 <div className="  p-3 rounded-tl-xl rounded-bl-xl  border-r border-black flex flex-col items-start justify-center w-fit">
                     <button name="Education" className="px-2 hover:rounded-full hover:bg-teal-300/50" onClick={handleChange}> <SchoolIcon sx={{ fontSize:30,marginY:1 }} /> Education</button>
                     <button name="Programming Skills" className="px-2 hover:rounded-full hover:bg-teal-300/50" onClick={handleChange}> <PsychologyIcon sx={{ fontSize:30,marginY:1 }}/>Programming Skills</button>
-                    <button name="Projects" className="px-2 hover:rounded-full hover:bg-teal-300/50" onClick={handleChange}> <LayersIcon sx={{ fontSize:30,marginY:1 }} />Projects</button>
                     <button name="Interests" className="px-2 hover:rounded-full hover:bg-teal-300/50" onClick={handleChange}> <ColorLensIcon sx={{ fontSize:30,marginY:1 }} />Interests</button>
                     <button name="Activities" className="px-2 hover:rounded-full hover:bg-teal-300/50" onClick={handleChange}> <HandshakeIcon sx={{ fontSize:30,marginY:1 }} />Activities</button>
 
