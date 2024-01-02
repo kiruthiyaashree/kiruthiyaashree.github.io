@@ -30,7 +30,7 @@
     "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://kiruthiyaashree.github.io/",
+  "homepage": "https://kiruthiyaashree.github.io",
   "eslintConfig": {
     "extends": [
       "react-app",
