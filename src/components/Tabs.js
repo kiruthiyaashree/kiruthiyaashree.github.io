@@ -1,5 +1,3 @@
-// import Box from "@mui/material/Box";
-// import SchoolIcon from '@mui/icons-material/School';
 import React from "react";
 import '../App.css';
 import SchoolIcon from '@mui/icons-material/School';
