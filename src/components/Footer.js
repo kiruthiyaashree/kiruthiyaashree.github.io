@@ -16,7 +16,7 @@ export default function Footer()
             <br/>
             <div>
                 <a target="blank" href="https://www.instagram.com/kiruthiyaashreesp/"><Instagram/></a>
-                <a target="blank" href="www.linkedin.com/in/kiruthiyaashree-s-p"><LinkedIn /></a>
+                <a target="blank" href="https://www.linkedin.com/in/kiruthiyaashree-s-p"><LinkedIn /></a>
                 <a target="blank" href="https://github.com/kiruthiyaashree"><GitHub  /></a>
             </div>
             <br/>
