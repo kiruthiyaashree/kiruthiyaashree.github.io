@@ -54,10 +54,10 @@ export default function Tabs()
         }
     };
     return (
-        <div className="flex justify-center  ">
-        <div className="border border-black w-[80rem] h-[25rem] border-b-4 border-r-4 rounded-xl p-16 grid grid-cols-[1fr_3fr]">
-                <div className="  p-3 rounded-tl-xl rounded-bl-xl  border-r border-black flex flex-col items-start justify-center w-fit">
-                    <button name="Education" className="px-2 hover:rounded-full hover:bg-teal-300/50" onClick={handleChange}> <SchoolIcon sx={{ fontSize:30,marginY:1 }} /> Education</button>
+        <div className="flex justify-center">
+        <div className="border border-black w-[80rem] tabs border-b-4 border-r-4 rounded-xl p-16 md:grid md:grid-cols-[1fr_3fr]">
+                <div className="  p-3 rounded-tl-xl rounded-bl-xl  md:border-r md:border-black md:flex md:flex-col md:items-start md:justify-center w-fit">
+                    <button name="Education" className="px-2 hover:rounded-full hover:bg-teal-300/50" onClick={handleChange}> <SchoolIcon sx={{ fontSize:30,marginY:1 }} />Education</button>
                     <button name="Programming Skills" className="px-2 hover:rounded-full hover:bg-teal-300/50" onClick={handleChange}> <PsychologyIcon sx={{ fontSize:30,marginY:1 }}/>Programming Skills</button>
                     <button name="Interests" className="px-2 hover:rounded-full hover:bg-teal-300/50" onClick={handleChange}> <ColorLensIcon sx={{ fontSize:30,marginY:1 }} />Interests</button>
                     <button name="Activities" className="px-2 hover:rounded-full hover:bg-teal-300/50" onClick={handleChange}> <HandshakeIcon sx={{ fontSize:30,marginY:1 }} />Activities</button>
@@ -67,7 +67,7 @@ export default function Tabs()
 
                 {/* </div> */}
                     <div className="p-3 text-lg overflow-hidden">
-                    <div className="scrolling-container">
+                    <div className="scrolling-container md:text-lg tabs_text sm:text-xs">
                     {
                         e_value  && 
                         <Education/>
