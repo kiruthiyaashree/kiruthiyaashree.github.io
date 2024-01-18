@@ -41,7 +41,7 @@ export default function ContactForm()
                 <br/>
 
                 <div className='flex justify-center '>
-                <div className='grid grid-cols-2 w-[60rem] h-[30rem] p-3 border-dashed border-2 rounded-xl bg-cyan-50 border-black'>
+                <div className='md:grid md:grid-cols-2 w-[60rem] md:h-[30rem] p-3 border-dashed border-2 rounded-xl bg-cyan-50 border-black'>
                     <div>
                         <div className='text-base h-full flex justify-center items-center lg:text-xl'>
                         <p className='rounded-[23%_77%_67%_33%_/_50%_61%_39%_50%] border border-b-4 border-r-4 border-black w-52 h-52 flex justify-center items-center text-[2em] font-Courgette leading-10'>Get In
