@@ -29,19 +29,19 @@ export default function Home()
         return ()=>clearInterval(typingEffect);
     },[]);
     return (
-        <div className="home md:h-[100rem]  lg:h-[40rem] w-full">
+        <div className="home md:h-[50rem]  lg:h-[40rem] w-full">
         <span  className='flex justify-end'>
          <img src={Logo} className='h-[3rem] m-4'  alt='try reloading'/>
          </span>
          <div className='md:grid md:grid-cols-2'>
         <div className='h-full my-12 flex justify-center items-center w-full'>
-            <img src={Profile} className='border border-black border-b-4 rounded-full p-1 h-[25rem] '  alt='try reloading'/>
+            <img src={Profile} className='border border-black border-b-4 rounded-full p-1 h-[25rem] profile'  alt='try reloading'/>
             </div>
-            <div className="flex flex-col md:items-start sm:items-center justify-center">    
-                <p className='flex justify-end bold text-[2rem] mb-2'>I am Kiruthiyaashree</p>
-                <p className='flex justify-end text-2xl lg:mr-24'>{text}</p>
+            <div className="flex flex-col md:items-start sm:items-center justify-center info">    
+                <p className='bold mb-2 home_text'>I am Kiruthiyaashree</p>
+                <p className=' home_text lg:mr-24'>{text}</p>
                 <br/>
-                <div className="sm:flex sm:justify-center sm:items-center">
+                <div className="sm:flex sm:justify-center sm:items-center links">
                 <a target="blank" href="https://www.instagram.com/kiruthiyaashreesp/"><Instagram/></a>
                 <a target="blank" href="https://www.linkedin.com/in/kiruthiyaashree-s-p/"><LinkedIn/></a>
                 <a target="blank" href="https://github.com/kiruthiyaashree"><GitHub  /></a>
