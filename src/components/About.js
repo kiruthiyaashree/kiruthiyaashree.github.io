@@ -18,7 +18,7 @@ export default function About()
                 <br/>
 
                 <div className='flex justify-center'>
-                <div className='p-3 grid grid-cols-[4fr_2fr] shadow-xl w-[60%] rounded-md bg-emerald-100/50'>
+                <div className='p-3 about_me grid grid-cols-[4fr_2fr] shadow-xl w-[60%] rounded-md bg-emerald-100/50'>
                     <div className='flex flex-col justify-center'>
                         <br/>
                             <p className='text-justify text-lg'>Looking for an exciting opportunity where I can contribute with enthusiasm and engagement to nurture the company's growth while enhancing my knowledge.</p>
