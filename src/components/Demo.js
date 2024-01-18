@@ -21,7 +21,7 @@ export default function Demo()
             <br/>
 
             <div className=' flex justify-center'>
-                <div className='grid grid-cols-3 gap-[10rem]'>
+                <div className='md:grid md:grid-cols-3 md:gap-20 sm:grid sm:grid-cols-1 sm:gap-y-24 demo '>
                     <div className=' w-[15rem] shadow-xl'>
                             <a className="" href='https://quick-bite-lyzj.onrender.com/' target='blank'>
                                 <img src={Demo1} className='h-[10rem] w-[15rem]' alt='try reloading' />
