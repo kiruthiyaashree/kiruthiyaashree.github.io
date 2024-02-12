@@ -1,5 +1,6 @@
 import Divider from '@mui/material/Divider';
 import Logo from '../images/profile.png';
+import Resume from '../files/resume.pdf';
 export default function About()
 {
     return (
@@ -24,9 +25,9 @@ export default function About()
                             <p className='text-justify text-lg'>Looking for an exciting opportunity where I can contribute with enthusiasm and engagement to nurture the company's growth while enhancing my knowledge.</p>
                             <br/>
                             <br/>
-                            {/* <div className='flex justify-center'>
-                                <button className='border rounded-xl border-black w-fit px-2 py-1 hover:bg-white font-semibold'>Get Resume</button>
-                            </div> */}
+                            <div className='flex justify-center'>
+                                <a href={Resume} download className='cursor-pointer border rounded-xl border-black w-fit px-2 py-1 hover:bg-white font-semibold'>Get Resume</a>
+                            </div>
                     </div>
                     <div className=''>
                         <img src={Logo} alt='try reloading'/>
